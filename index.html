@@ -189,6 +189,13 @@ function setMultiplier(m){
 }
 
 function addExp(name, exp){
+    if (name === "のぼせトンマン") {
+    postBoss = true;
+}
+
+if (!postBoss && name === "ノガッパ") {
+    return;
+}
 
     const gained = exp * multiplier;
 
